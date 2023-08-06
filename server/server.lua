@@ -309,15 +309,15 @@ QBCore.Commands.Add('admincar', Lang:t("commands.save_vehicle_garage"), {}, fals
     TriggerClientEvent('qb-admin:client:SaveCar', source)
 end, 'admin')
 
-QBCore.Commands.Add('announce', Lang:t("commands.make_announcement"), {}, false, function(_, args)
-    local msg = table.concat(args, ' ')
-    if msg == '' then return end
-    TriggerClientEvent('chat:addMessage', -1, {
-        color = { 255, 0, 0},
-        multiline = true,
-        args = {"Announcement", msg}
-    })
-end, 'admin')
+-- QBCore.Commands.Add('announce', Lang:t("commands.make_announcement"), {}, false, function(_, args)
+--     local msg = table.concat(args, ' ')
+--     if msg == '' then return end
+--     TriggerClientEvent('chat:addMessage', -1, {
+--         color = { 255, 0, 0},
+--         multiline = true,
+--         args = {"Announcement", msg}
+--     })
+-- end, 'admin')
 
 QBCore.Commands.Add('admin', Lang:t("commands.open_admin"), {}, false, function(source, _)
     TriggerClientEvent('qb-admin:client:openMenu', source)
