@@ -1,7 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
-
-description 'QB-AdminMenu'
+lua54 'yes'
+author 'Kakarot'
+description 'Provides a menu for server and player management'
 version '1.2.0'
 
 ui_page 'html/index.html'
@@ -27,11 +28,9 @@ server_scripts {
     'server/server.lua'
 }
 
-files { -- Credits to https://github.com/LVRP-BEN/bl_coords for clipboard copy method
+files {
     'html/index.html',
     'html/index.js'
 }
 
 dependency 'menuv'
-
-lua54 'yes'
